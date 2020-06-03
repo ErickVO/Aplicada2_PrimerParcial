@@ -4,4 +4,10 @@
 
 Welcome to your new app.
 
+@inject IToastService toastService
+<button class="btn btn-info" @onclick="@(() => toastService.ShowInfo("Welcome to TheCodehubs"))">Info Toast</button>
+<button class="btn btn-success" @onclick="@(() => toastService.ShowSuccess("You are sign up successfully!"))">Success Toast</button>
+<button class="btn btn-warning" @onclick="@(() => toastService.ShowWarning("You are about to leave website!"))">Warning Toast</button>
+<button class="btn btn-danger" @onclick="@(() => toastService.ShowError("Oops! Error has occured"))">Error Toast</button>
+
 <SurveyPrompt Title="How is Blazor working for you?" />
