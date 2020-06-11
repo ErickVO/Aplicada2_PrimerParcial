@@ -24,14 +24,16 @@ namespace PrimerParcialBlazor.Models
         [Required(ErrorMessage ="Introduzca un Costo")]
         public decimal Costo { get; set; }
         
-        
+        [Required(ErrorMessage = "Este campo no puede estar vacio")]
+        public decimal ValorInventario { get; set; }
+
         public Articulos()
         {
             ArticuloId = 0;
             Descripcion = string.Empty;
             Existencia = 0;
             Costo = 0;
-           
+            ValorInventario = 0;
         }
     }
 }
