@@ -13,7 +13,7 @@ namespace PrimerParcialBlazor.DAL
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlite(@"Data Source: c:\Users\LENOVO\source\repos\ArticulosDb\ArticulosDb.db ");
+            optionsBuilder.UseSqlite(@"Data Source = c:\Users\LENOVO\source\repos\ArticulosDb\ArticulosDB.db" );
         }
     }
 }
