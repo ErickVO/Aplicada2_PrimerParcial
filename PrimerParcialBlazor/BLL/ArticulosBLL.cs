@@ -67,7 +67,7 @@ namespace PrimerParcialBlazor.BLL
             return paso;
         }
 
-        private static bool Eliminar(int id)
+        public static bool Eliminar(int id)
         {
             Contexto db = new Contexto();
             bool paso = false;
@@ -92,7 +92,7 @@ namespace PrimerParcialBlazor.BLL
             return paso;
         }
 
-        private static Articulos Buscar(int id)
+        public static Articulos Buscar(int id)
         {
             Contexto db = new Contexto();
             Articulos articulos;
